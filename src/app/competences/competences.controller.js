@@ -1,11 +1,9 @@
-export class ReferencesController {
-  constructor ($timeout, webDevTec, toastr) {
+export class CompetencesController {
+  constructor ($timeout, webDevTec) {
     'ngInject';
 
     this.awesomeThings = [];
     this.classAnimation = '';
-    this.creationDate = 1455051797527;
-    this.toastr = toastr;
 
     this.activate($timeout, webDevTec);
   }
@@ -25,8 +23,4 @@ export class ReferencesController {
     });
   }
 
-  showToastr() {
-    this.toastr.info('Fork <a href="https://github.com/Swiip/generator-gulp-angular" target="_blank"><b>generator-gulp-angular</b></a>');
-    this.classAnimation = '';
-  }
 }

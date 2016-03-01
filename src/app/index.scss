@@ -3,8 +3,15 @@
  *  The list of variables are listed here bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss
  */
 @import url(https://fonts.googleapis.com/css?family=Lato:300);
+
+//variables
+$fa-font-path: '../assets/fonts';
 $brand-primary: #556370;
 $headings-font-family: 'Lato';
+
+$jumbotron-padding: 1rem;
+$jumbotron-bg: #fff;
+
 /**
  *  Do not remove the comments below. It's the markers used by wiredep to inject
  *  sass dependencies when defined in the bower.json of your dependencies
@@ -12,12 +19,21 @@ $headings-font-family: 'Lato';
 // bower:scss
 // endbower
 
+.wrapper {
+  padding: $spacer 0;
+}
+
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
   color: #000;
   padding: 0.2em 0;
 }
+
+.mainheader {
+  transition: all 0.2s ease;
+}
+
 .tags {
 	font-family: $font-family-monospace;
 	font-size: 1.8rem;

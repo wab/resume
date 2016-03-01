@@ -1,0 +1,11 @@
+.jumbotron {
+	border: 1px solid $gray-lighter;
+}
+
+blockquote {
+	.fa {
+		font-size: 2em;
+		color: $gray-light;
+	}
+	font-style: italic;
+}

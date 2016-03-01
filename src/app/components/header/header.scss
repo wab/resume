@@ -1,0 +1,39 @@
+.mainheader .ng-hide-add {
+    -webkit-animation: fadeOutLeft 0.2s;
+    display: block!important;
+}
+.mainheader .ng-hide-remove {
+    -webkit-animation: fadeInLeft 0.2s;
+}
+
+.menu {
+	.nav-item {
+		margin-bottom: 0.4em;
+	}
+	.nav-link {
+		display: block;
+		position: relative;
+		padding-left: 1em;
+
+		
+		&:before {
+			content: '';
+			height: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 0.1em;
+			background: $brand-primary;
+			transition: all 0.2s ease;
+			z-index: -1;
+		}
+
+		&:hover, &:focus {
+			color: #fff;
+			&:before {
+				width: 100%;
+				
+			}
+		}
+	}
+}

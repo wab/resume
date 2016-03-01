@@ -4,22 +4,32 @@ export function routerConfig ($routeProvider) {
     .when('/', {
       templateUrl: 'app/main/main.html',
       controller: 'MainController',
-      controllerAs: 'main'
+      controllerAs: 'main',
+      home: true
+    })
+    .when('/competences', {
+      templateUrl: 'app/competences/competences.html',
+      controller: 'CompetencesController',
+      controllerAs: 'page',
+      home: false
     })
     .when('/experiences', {
       templateUrl: 'app/experiences/experiences.html',
       controller: 'ExperiencesController',
-      controllerAs: 'experience'
+      controllerAs: 'experiences',
+      home: false
     })
     .when('/formation', {
       templateUrl: 'app/formation/formation.html',
       controller: 'FormationController',
-      controllerAs: 'formation'
+      controllerAs: 'page',
+      home: false
     })
     .when('/references', {
       templateUrl: 'app/references/references.html',
       controller: 'ReferencesController',
-      controllerAs: 'references'
+      controllerAs: 'page',
+      home: false
     })
     .otherwise({
       redirectTo: '/'

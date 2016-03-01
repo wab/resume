@@ -1,0 +1,21 @@
+<view-title>Compétences</view-title>
+<h2 class="page-title">Compétences / outils</h2>
+
+<div class="btn-group m-b-2" opt-kind="" ok-key="filter">
+  <button type="button" class="btn btn-primary-outline active" ok-sel="*">Show All</button>
+  <button type="button" class="btn btn-primary-outline" ok-sel=".front-end">Front End</button>
+  <button type="button" class="btn btn-primary-outline" ok-sel=".back-end">Back End</button>
+  <button type="button" class="btn btn-primary-outline" ok-sel=".tools">Work Tools</button>
+</div>
+
+<div class="row" isotope-container="isotope-container">
+  <div class="col-md-6 col-lg-4" ng-repeat="awesomeThing in page.awesomeThings | orderBy:'rank'"  ng-class="awesomeThing.class" isotope-item="isotope-item">
+    <div class="thumbnail" >
+      <img class="pull-right" ng-src="assets/images/{{ awesomeThing.logo }}" alt="{{ awesomeThing.title }}">
+      <div class="caption">
+        <h3 class="h4">{{ awesomeThing.title }}</h3>
+        <p><a ng-href="{{awesomeThing.url}}">{{ awesomeThing.url }}</a></p>
+      </div>
+    </div>
+  </div>
+</div>
